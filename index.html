@@ -106,7 +106,7 @@
 
     <div class="quiz-container">
         <h2 id="title">Quiz App</h2>
-        <!--<p id="attempts"></p>-->
+        <p id="attempts"></p>
         <div id="question">Question will appear here</div>
         <div class="options">
             <div>
@@ -229,7 +229,7 @@ let labelA = document.getElementById("labelA")
 let labelB = document.getElementById("labelB")
 let labelC = document.getElementById("labelC")
 let labelD = document.getElementById("labelD")
-//let attempts = document.getElementById("attempts")
+let attempts = document.getElementById("attempts")
 
 
 
@@ -265,7 +265,7 @@ let loadQuiz = function (){
      labelB.innerText=  quizQuestions[quizCountTracker].b
      labelC.innerText=  quizQuestions[quizCountTracker].c
      labelD.innerText=  quizQuestions[quizCountTracker].d
-     //attempts.innerHTML = `Score: ${score}/${(quizQuestions.length)`
+     attempts.innerHTML = `Score: ${score}/${(quizQuestions.length)`
      
      
      
