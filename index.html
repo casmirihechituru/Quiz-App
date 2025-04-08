@@ -106,6 +106,7 @@
 
     <div class="quiz-container">
         <h2 id="title">Quiz App</h2>
+        <p id="attempts"></p>
         <div id="question">Question will appear here</div>
         <div class="options">
             <div>
@@ -228,6 +229,7 @@ let labelA = document.getElementById("labelA")
 let labelB = document.getElementById("labelB")
 let labelC = document.getElementById("labelC")
 let labelD = document.getElementById("labelD")
+let attempts = document.getElementById("attempts")
 
 
 
@@ -256,6 +258,7 @@ let diselectOption = function (){
 
 let loadQuiz = function (){
   diselectOption()
+    attempts.innerHTML = `Score: ${score}/${(quizQuestions.length)`
      displayQuestion.innerText=  quizQuestions[quizCountTracker].question
      
      labelA.innerText=  quizQuestions[quizCountTracker].a
