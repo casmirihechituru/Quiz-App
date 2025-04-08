@@ -258,13 +258,14 @@ let diselectOption = function (){
 
 let loadQuiz = function (){
   diselectOption()
-    attempts.innerHTML = `Score: ${score}/${(quizQuestions.length)`
+    
      displayQuestion.innerText=  quizQuestions[quizCountTracker].question
      
      labelA.innerText=  quizQuestions[quizCountTracker].a
      labelB.innerText=  quizQuestions[quizCountTracker].b
      labelC.innerText=  quizQuestions[quizCountTracker].c
      labelD.innerText=  quizQuestions[quizCountTracker].d
+     attempts.innerHTML = `Score: ${score}/${(quizQuestions.length)`
      
      
      
